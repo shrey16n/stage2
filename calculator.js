@@ -23,6 +23,10 @@ function addToHistory(expression, result) {
   historyList.prepend(li); // Most recent on top
 }
 
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+
 // 🧠 New: Keyboard support
 document.addEventListener("keydown", function (event) {
   const allowedKeys = "0123456789+-*/.=EnterBackspace";
