@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, I'm Shrey Modi</h1>
-  <p>Welcome to my Portfolio website!</p>
+  <div class="container">
+    <header>
+      <img src="images/profile.jpg" alt="Profile photo" class="profile-pic" />
+      <h1>Hello, I'm Shrey Modi</h1>
+      <p>A passionate learner exploring web development and GitHub</p>
+      <button id="toggleMode">🌙 Toggle Dark Mode</button>
+    </header>
 
-  <h2>About Me</h2>
-  <p>I'm learning GitHub and building my first website!</p>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m building cool stuff and learning to code every day!</p>
+    </section>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML & CSS</li>
-    <li>GitHub</li>
-    <li>Team Collaboration</li>
-  </ul>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>GitHub & Version Control</li>
+        <li>Team Collaboration</li>
+      </ul>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: yourname@example.com</p>
+    <section>
+      <h2>Contact</h2>
+      <p>Email: shrey.16n@gmail.com</p>
+    </section>
+  </div>
+
+  <script>
+    const toggle = document.getElementById("toggleMode");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
