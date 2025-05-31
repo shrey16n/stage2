@@ -16,6 +16,13 @@ function calculate() {
   }
 }
 
+function addToHistory(expression, result) {
+  const historyList = document.getElementById("historyList");
+  const li = document.createElement("li");
+  li.textContent = `${expression} = ${result}`;
+  historyList.prepend(li); // Most recent on top
+}
+
 // 🧠 New: Keyboard support
 document.addEventListener("keydown", function (event) {
   const allowedKeys = "0123456789+-*/.=EnterBackspace";
