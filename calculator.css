@@ -81,3 +81,12 @@ body.dark button {
 body.dark button:hover {
   background: #666;
 }
+
+button {
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
