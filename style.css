@@ -61,3 +61,31 @@ button:hover {
 .dark-mode button {
   background: #333;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #e9f5ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin: 0 0 5px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+.dark-mode .project-card {
+  background-color: #1e1e1e;
+}
+
