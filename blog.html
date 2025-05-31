@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 30px; }
+    select { margin-bottom: 20px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>My Blog</h1>
+  <select id="postSelector">
+    <option value="blog/post1.md">Post 1 - My First Blog</option>
+    <option value="blog/post2.md">Post 2 - Another Day</option>
+  </select>
+  <div id="content">Loading...</div>
+
+  <script src="marked.min.js"></script>
+  <script>
+    const selector = document.getElementById('postSelector');
+    const content = document.getElementById('content');
+
+    async function loadPost(path) {
+      const res = await fetch(path);
+      const text = await res.text();
+      content.innerHTML = marked.parse(text);
+    }
+
+    selector.addEventListener('change', () => loadPost(selector.value));
+    loadPost(selector.value); // Load first post by default
+  </script>
+</body>
+</html>
