@@ -1,9 +1,63 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 30px;
-  background-color: #f9f9f9;
+  background: #f4f4f4;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #007acc;
+  margin-bottom: 10px;
+}
+
 h1 {
+  margin: 10px 0 5px;
   color: #007acc;
+}
+
+section {
+  margin-top: 30px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005b99;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+
+.dark-mode h1 {
+  color: #4fc3f7;
+}
+
+.dark-mode button {
+  background: #333;
 }
