@@ -62,3 +62,22 @@ button:hover {
   padding-left: 0;
   font-size: 0.9em;
 }
+
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .calculator,
+body.dark .history {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark button {
+  background: #444;
+}
+
+body.dark button:hover {
+  background: #666;
+}
