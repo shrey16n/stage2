@@ -44,3 +44,21 @@ button:hover {
   background: #005b99;
 }
 
+.history {
+  margin-top: 20px;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.history h3 {
+  margin-top: 0;
+}
+
+#historyList {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9em;
+}
