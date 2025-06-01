@@ -1,10 +1,25 @@
+:root {
+  --primary: #1e90ff;
+  --bg: #ffffff;
+  --text: #333333;
+  --accent: #f1f1f1;
+}
+
 body {
+  background: var(--bg);
+  color: var(--text);
+}
+a, button {
+  color: var(--primary);
+}
+
+/* body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
   margin: 0;
   padding: 0;
-}
+} */
 
 .container {
   max-width: 700px;
